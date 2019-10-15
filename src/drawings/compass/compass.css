@@ -1,0 +1,151 @@
+@keyframes compass-rotation {
+    0%   {transform: rotate(0deg);}
+    10%  {transform: rotate(25deg);}
+    20%  {transform: rotate(76deg);}
+    30%  {transform: rotate(25deg);}
+    40%  {transform: rotate(184deg);}
+    50%  {transform: rotate(105deg);}
+    60%  {transform: rotate(190deg);}
+    70%  {transform: rotate(254deg);}
+    80%  {transform: rotate(102deg);}
+    90%  {transform: rotate(344deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.compass-container{
+	display: relative;
+    margin: auto;
+    margin-top: 11%;
+    position: relative;
+    border: 7px solid black;
+    background-color: #306ccc;
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+}
+
+.compass-keyring-ring {
+	width: 120px;
+	height: 120px;
+	z-index: -1;
+	border: 12px solid black;
+	border-radius: 50%;
+	margin-left: 277px;
+	transform: translateY(-200px);
+}
+
+.compass-keyring-ring-inner-border {
+	width: 120px;
+	height: 120px;
+	transform: translateX(-2px);
+	border: 3px solid black;
+	border-radius: 50%;
+}
+
+.compass-keyring-upper {
+	z-index: 2;
+	background: gray;
+	width: 90px;
+	height: 50px;
+	border: 5px solid black;
+	margin-left: 300px;
+	transform: translateY(-230px);
+}
+
+.compass-keyring-lower {
+	background: gray;
+	width: 50px;
+	height: 20px;
+	border: 5px solid black;
+	margin-left: 320px;
+	transform: translateY(-235px);
+}
+
+.compass{
+    position: absolute;
+    top: 8%; 
+    left:8%;
+    width:84%;
+    height:84%;
+    border-radius: 50%;
+    background-color: #edeff2;
+    border: 3px solid black;
+}
+
+.compass-north-arrow{
+    width: 0;
+    height: 0;
+    margin-top: -510px;
+    margin-left: 250px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
+}
+
+.compass-south-arrow{
+    width: 0;
+    height: 0;
+    margin-top: 315px;
+    margin-left: 250px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #306ccc;
+}
+
+.compass-arrows{
+    animation: compass-rotation infinite;
+    animation-duration: 12s;
+}
+
+.north-indicator{
+    margin-left: 275px;
+    font-size: 70px;
+}
+
+.middle-indicators{
+    margin-top: 170px;
+    width: 100%;
+    height: 80px;
+}
+
+.east-indicator{
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 70px;
+}
+
+.compass-inner-circle{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: inline-block;
+	border: 5px solid black;
+	margin-left: 215px;
+}
+
+.compass-center{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+    background-color: #306ccc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.west-indicator{
+    margin-left: 165px;
+    display: inline-block;
+    font-size: 70px;
+}
+
+.south-indicator{
+    margin-left: 280px;
+    margin-top: 180px;
+    font-size: 70px;
+}
+
+

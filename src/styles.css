@@ -1,0 +1,30 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background: url('./assets/lab-background-2.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+table {
+    border: 1px solid lightgray;
+    margin: 0 auto;
+}
+
+th {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+td {
+    padding: 20px 20px;
+    width: 25%;
+    
+}
+
+.table-container {
+    margin-top: 70px;
+}
